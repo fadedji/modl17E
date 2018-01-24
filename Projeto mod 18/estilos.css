@@ -1,0 +1,153 @@
+
+ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #070607;
+                }
+
+                li {
+                float: left;
+                border-right:1px solid #bbb;
+                }
+
+                li:last-child {
+                border-right: none;
+                }
+
+                li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 12px 20px;
+                text-decoration: none;
+                }
+
+                li a:hover:not(.active) {
+                background-color: #1CD9F1;
+                }
+
+                .active {
+                background-color: #374237;
+                }
+
+                body {
+                color: #070607;
+                background: #FFFFFF;
+                border-width: 12px;
+                border-style: solid;
+                border-color: #070607;
+		        padding: 0;
+		        margin: 0;
+                }
+
+                .autom, td, th {
+                    border: 1px solid #000000;
+                }
+                
+                .autom {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                
+                th {
+                    text-align: left;
+                }
+
+                .tabofi, td, th {
+                    border: 1px solid #FFFFFF;
+                }
+                
+                .tabofi {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                
+                th {
+                    text-align: left;
+                }
+
+                .tabssm, td, th {
+                    border: 1px solid #FFFFFF;
+                }
+                
+                .tabssm {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                
+                th {
+                    text-align: left;
+                }
+
+                .tabmon, td, th {
+                    border: 1px solid #FFFFFF;
+                }
+                
+                .tabmon {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                
+                th {
+                    text-align: left;
+                }
+
+                input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #2B3A3D;
+                border-radius: 4px;
+                box-sizing: border-box;
+                }
+
+                input[type=Submit] {
+                width: 100%;
+                background-color: #1891D8;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                }
+
+                input[type=Submit]:hover {
+                background-color: #167FE0;
+                }
+
+                div {
+                border-radius: 5px;
+                background-color: white;
+                padding: 20px;
+                }
+
+                .menuofi {
+                width: 340px;
+                }
+
+                .menuofi a {
+                background-color: #23B9E7;
+                color: black;
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+                border:1px solid #F8F6F6;
+                
+                }
+
+                .menuofi a:hover {
+                background-color: #ccc;
+                }
+
+                .menuofi a.active {
+                background-color: #4CAF50;
+                color: white;
+                }
+
+                #datepicker {
+                background-color: #FFFFFF;
+                }

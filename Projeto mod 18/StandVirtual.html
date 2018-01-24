@@ -1,0 +1,561 @@
+<html>
+    <head>
+        <title>
+                StandVirtual
+        </title>   
+        <link rel="icon" type="imagem/png" href="carro.png" />
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="external/jquery/jquery.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".home").show();
+                $(".vnovos").hide();
+                $(".oficina").hide();
+                $(".ssm").hide();
+                $(".mon").hide();
+                $(".sobrenos").hide();
+                $("#t1").hide();
+                $("#t2").hide();
+                $("#t3").hide();
+                $("#t4").hide();
+                $("#t5").hide();
+                $("#sn").css({"border":"3px solid gray ","background-color": "Light grey"});
+                $("#parceiros").css({"border":"3px solid gray ","background-color": "Light grey"});
+                $("#instal").css({"border":"3px solid gray ","background-color": "Light grey"});
+
+//Funções das imagens da página Viaturas Novas ----------------------------------------------------------------------------
+                $("#ver1").click(function(){
+                    $(".vnovos").fadeOut(0);
+                    $("#t1").fadeIn(0);
+                    alert("Carregue na imagem para voltar à tabela inicial");          
+                });
+
+                $("#t1").click(function(){
+                    $(".vnovos").fadeIn(0);
+                    $("#t1").fadeOut(0);         
+                });
+
+                $("#ver2").click(function(){
+                    $(".vnovos").fadeOut(0);
+                    $("#t2").fadeIn(0);
+                    alert("Carregue na imagem para voltar à tabela inicial");          
+                });
+
+                $("#t2").click(function(){
+                    $(".vnovos").fadeIn(0);
+                    $("#t2").fadeOut(0);         
+                });
+
+                $("#ver3").click(function(){
+                    $(".vnovos").fadeOut(0);
+                    $("#t3").fadeIn(0);
+                    alert("Carregue na imagem para voltar à tabela inicial");          
+                });
+
+                $("#t3").click(function(){
+                    $(".vnovos").fadeIn(0);
+                    $("#t3").fadeOut(0);         
+                });
+
+                $("#ver4").click(function(){
+                    $(".vnovos").fadeOut(0);
+                    $("#t4").fadeIn(0);
+                    alert("Carregue na imagem para voltar à tabela inicial");          
+                });
+
+                $("#t4").click(function(){
+                    $(".vnovos").fadeIn(0);
+                    $("#t4").fadeOut(0);         
+                });
+
+                $("#ver5").click(function(){
+                    $(".vnovos").fadeOut(0);
+                    $("#t5").fadeIn(0);
+                    alert("Carregue na imagem para voltar à tabela inicial");          
+                });
+
+                $("#t5").click(function(){
+                    $(".vnovos").fadeIn(0);
+                    $("#t5").fadeOut(0);         
+                });
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+// ------------------------------------------------- Fazer o focus no formulario da página das Viaturas Novas ----------------------
+
+                $("input").focus(function(){
+                    $(this).css("background-color", "yellow");
+                });
+                
+                $("input").blur(function(){
+                    $(this).css("background-color", "white");
+                });
+
+                $("#nome").click(function(){
+                    $("#nome").focus();
+                });
+
+                $("#sub").click(function(){
+                        alert("Os seus dados foram enviados com sucesso!");
+                    
+                });
+
+                $("#sub1").click(function(){
+                    alert("Os seus dados foram enviados, entraremos em contacto consigo brevemente.");
+                });
+
+// --------------------------------------------------------------------------------------------------------------------------------
+
+// --------------------------------------------------- Otimização do formulário ---------------------------------------------------
+
+                $(".homeico").click(function(){
+                    $(".home").show();
+                    $(".vnovos").hide();
+                    $(".oficina").hide();
+                    $(".ssm").hide();
+                    $(".mon").hide();
+                    $(".sobrenos").hide();
+                });
+
+                $(".novos").click(function(){
+                    $(".vnovos").show();
+                    $(".home").hide();
+                    $(".oficina").hide();
+                    $(".ssm").hide();
+                    $(".mon").hide();
+                    $(".sobrenos").hide();
+                });
+
+                $(".usados").click(function(){
+                    $(".oficina").show();
+                    $(".home").hide();
+                    $(".vnovos").hide();
+                    $(".ssm").hide();
+                    $(".mon").hide();
+                    $(".sobrenos").hide();
+                });
+
+                $("#servisem").click(function(){
+                    $(".ssm").show();
+                    $(".home").hide();
+                    $(".vnovos").hide();
+                    $(".oficina").hide();
+                    $(".mon").hide();
+                    $(".sobrenos").hide();
+                });
+
+                $("#marcon").click(function(){
+                    $(".mon").show();
+                    $(".home").hide();
+                    $(".vnovos").hide();
+                    $(".oficina").hide();
+                    $(".ssm").hide();
+                    $(".sobrenos").hide();
+                });
+
+                $(".sobre").click(function(){
+                    $(".sobrenos").show();
+                    $(".home").hide();
+                    $(".vnovos").hide();
+                    $(".oficina").hide();
+                    $(".ssm").hide();
+                    $(".mon").hide();
+                });
+                //plugin
+                $( "a" ).css( "color", "orange" );
+                
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+            });
+        </script>
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                $( function(){
+                    $( "#datepicker" ).datepicker();
+                });
+            </script>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+
+
+<!-- 1- Formação do menu
+     2- Formação das margens no body
+     3- Formação do formato da tabela -->
+    </head>
+
+    <body>
+        <img src="StandVirtual.png"> <br> <br> <br>
+            <ul>
+                <li class="homeico"><a><img src="home.png" width="40" height="20"></a></li>
+                <li class="novos"><a>VIATURAS NOVAS</a></li>
+                <li class="usados"><a>OFICINA</a></li>
+                <li class="sobre" style="float:right"><a>SOBRE NÓS</a></li>
+            </ul> 
+
+<!-- -------------------------------------Criação da página home ------------------------------------------ -->
+        <div class="home">
+            <center>
+            <h1><b><font size="20">|O site número 1 na compra de carros|</font></b></h1>
+            <h2><b>|Consulte o nosso menu e escolha já o seu próximo veículo|</b></h2> <br> <br>
+
+<!--Formação do slideshow -->
+            <div class="primslide">
+                <img class="slide1" src="focus.png" style="width:50%" width="530" height="340">
+                <img class="slide1" src="fiesta.png" style="width:50%" width="530" height="340">
+                <img class="slide1" src="ecosport.png" style="width:50%" width="530" height="340">
+                <img class="slide1" src="cmax.png" style="width:50%" width="530" height="340">
+              
+<!--Criação dos botões para mudar de imagem para a esquerda e direita -->
+                <button class="btnleft" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="btnright" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+              
+<!-- 1- Definir o SlideIndex como primeira imagem e chamar o ShowDivs para o exibir
+     2- Quando o utilizador carrega num dos botões para mudar a imagem, para a esquerda ou para a direita,
+chama a função plusDivs subtrai (esquerda) ou adiciona mais um (direita)
+     3- A função ShowDivs esconde (display = none) todos as imagens com a classe slide1 e 
+exibe (display = block) a imagem fornecida  
+     4- Se o SlideIndex for maior que o número de imagens (x.lenght), o SlideIndex é definido como zero
+     5- Se o SlideIndef for menor que o numero de imagens, é definido como número de imagens (x.lenght)-->   
+
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slide1");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script> 
+
+            </center>
+        </div>
+<!-- ------------------------------------------- Fim da página Home ----------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------ Inicio da página Viaturas Novas ----------------------- -->
+        <div class="vnovos">
+            <center>
+                <h1>Consulte as nossas viaturas novas</h1>
+                <br>
+                <table class="autom" style="width:90%">
+                        <tr>
+                          <th>Modelo</th>
+                          <th>Cavalos</th> 
+                          <th>Versão</th>
+                          <th>Combustível</th>
+                          <th>Referência</th>
+                          <th>Quantidade</th>
+                          <th>Ver Carro</th>
+                          <th>Preço sem prestações</th>
+                          
+                        </tr>
+                        <tr>
+                          <td>Ford Fiesta</td>
+                          <td>85 CV</td>
+                          <td>B479 Business 1.1</td>
+                          <td>Gasolina</td>
+                          <td>FF001</td>
+                          <td>12</td>
+                          <td><u id="ver1">Clique aqui</u></td>
+                          <td>13.290€</td>
+                        </tr>
+                        <tr>
+                            <td>Ford Focus</td>
+                            <td>250 CV</td>
+                            <td>ST</td>
+                            <td>Gasolina</td>
+                            <td>FF002</td>
+                            <td>8</td>
+                            <td><u id="ver2">Clique aqui</u></td>
+                            <td>19.450€</td>
+                        </tr>
+                        <tr>
+                            <td>Ford Ecosport</td>
+                            <td>125 CV</td>
+                            <td>Trend 1.0 EcoBoost 92 KW</td>
+                            <td>Gasolina</td>
+                            <td>FF003</td>
+                            <td>14</td>
+                            <td><u id="ver3">Clique aqui</u></td>
+                            <td>14.340€</td>
+                        </tr>
+                        <tr>
+                            <td>Ford Kuga</td>
+                            <td>120 CV</td>
+                            <td>Business 1.5 TDCI 88 KW </td>
+                            <td>Gasolina</td>
+                            <td>FF004</td>
+                            <td>10</td>
+                            <td><u id="ver4">Clique aqui</u></td>
+                            <td>13.560€</td>
+                        </tr>
+                        <tr>
+                            <td>Ford C-MAX</td>
+                            <td>125 CV</td>
+                            <td>Titanium 1.0 EcoBoost 92 KW</td>
+                            <td>Gasolina</td>
+                            <td>FF005</td>
+                            <td>7</td>
+                            <td><u id="ver5">Clique aqui</u></td>
+                            <td>15.470€</td>
+                        </tr>
+                </table> <br>
+            </center>
+            <h3>*Se ficou interessado num dos nossos veículos, preencha o seguinte formulário e entraremos em 
+                contacto consigo via email ou telemóvel.</h3>
+            
+            <div class="form">
+              <form>
+                <label for="nome">Nome e Apelido*</label>
+                <input type="text" id="nome1" name="cxnome" placeholder="Insira o seu nome e apelido..."> <br>
+            
+                <label for="email">Email*</label>
+                <input type="text" id="email1" name="email" placeholder="Insira o seu email..."> <br>
+
+                <label for="telemovel">Telemóvel*</label>
+                <input type="text" id="telemovel1" name="cxtelemovel" placeholder="Insira o seu numero de telemóvel..."> <br>
+
+                <label for="local">Localidade*</label>
+                <input type="text" id="local1" name="cxlocal" placeholder="Insira a sua localidade..."> <br>
+            
+                <label for="horac">Hora de Contacto*</label>
+                <select id="horac1" name="cxhorac">
+                  <option value="nove">09:00</option>
+                  <option value="dez">10:00</option>
+                  <option value="onze">11:00</option>
+                  <option value="doze">12:00</option>
+                  <option value="treze">13:00</option>
+                  <option value="catorze">14:00</option>
+                  <option value="quinze">15:00</option>
+                  <option value="dezasseis">16:00</option>
+                  <option value="dezassete">17:00</option>
+                  <option value="dezoito">18:00</option>
+                  <option value="dezanove">19:00</option>
+                </select> <br>
+
+                <label for="modelo">Modelo no qual está interessado*</label>
+                <select id="modelo1" name="cxmodelo">
+                  <option value="nove">Ford Fiesta</option>
+                  <option value="dez">Ford Focus</option>
+                  <option value="onze">Ford Ecosport</option>
+                  <option value="doze">Ford Kuga</option>
+                  <option value="treze">Ford C-MAX</option>
+                </select>
+              
+                <input
+                 id="sub" type="Submit" value="Submit">
+              </form>
+            </div>    
+        </div>
+
+<!-- -------------------------------------- Fim da página Vituras Novas ------------------------ -->
+<!-- ------------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------- Imagens da página Viaturas Novas -------------------- -->
+
+
+        <div class="imgvn">
+            <center>
+                <img id="t1" src="fiesta.png" width="530" height="340">
+                <img id="t2" src="focus.png" width="530" height="340">
+                <img id="t3" src="ecosport.png" width="530" height="340">
+                <img id="t4" src="kuga.png" width="530" height="340">
+                <img id="t5" src="cmax.png" width="530" height="340">
+
+            </center>
+        </div>
+
+<!-- ---------------------------------- Fim das imagens da página Viaturas Novas ------------ -->
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- ------------------------------------------ Página Oficina ------------------------------ -->
+
+        <div class="oficina">
+            <table class="tabofi" style="width:100%" border="0">
+                <tr>
+                    <td><div class="texto">
+                        
+                            <font color="blue"><h1>Oficina</h1></font> <br> <br> <br> 
+
+                            <p align="justify">A nossa equipa altamente qualificada do serviço de Pós-Venda <br>  
+                                oferece aos seus clientes um acompanhamento contínuo e especializado, <br> 
+                                nas áreas de oficina, chapa, pintura e peças.</p> 
+
+                            <p align="justify">A aposta na mais moderna tecnologia e a experiência da equipa, <br> 
+                                permitem a realização de diagnósticos e resolução das mais diversas <br>
+                                situações de forma mais rápida e com maior grau de fiabilidade.</p> 
+
+                            <p align="justify"><b>HORÁRIO:</b> <br>
+                                9:00 às 13:00h e das 14:00h às 18:00h <br>
+                                Encerra aos Sábados e Domingos </p>
+                        
+                    </div></td>
+                    
+                    <td>
+                        <center>
+                        <img src="oficina.jpg" width="340">
+                        <div class="menuofi">
+                            <a id="servisem">SERVIÇOS SEM MARCAÇÃO</a>
+                            <a id="marcon">MARCAÇÕES ON-LINE</a>
+                        </center>
+                    </div></td>
+                </tr>
+            </table>
+        </div>
+<!-- ------------------------------------ Fim da página Oficina --------------------- -->
+<!-- -------------------------------------------------------------------------------- -->
+<!-- ----------------------------------- Página SSM --------------------------------- -->
+
+        <div class="ssm">
+            <table class="tabssm" style="width:100%" border="0">
+                <tr>
+                <td><div class="texto">
+                    
+                        <font color="blue"><h1>Serviços sem Marcação</h1></font> <br> <br> 
+
+                        <p align="justify">No StandVirtual, sabemos que a rapidez de resposta é da maior importância para os nossos clientes.<br> 
+                            É por isso que colocamos ao seu dispor um serviço rápido e de excelência.</p> 
+
+                        <p align="justify">Os serviços incluídos nesta secção são os de execução mais rápida como:</p> 
+
+                        <p align="justify">
+                            
+                                <li>Correcção do nível de óleo e fluidos;</li> <br>
+                                <li>Substituição de lâmpadas;</li> <br>
+                                <li>Substituição de pastilhas de travão;</li> <br>
+                                <li>Substituição de baterias;</li> <br>
+                                <li>Substituição de escovas de limpa vidros.</li> <br>
+                        </p>
+
+                        <p align="justify">Para usufruir deste serviço não necessita de efectuar qualquer marcação. </p>
+                    
+                </div></td>
+                
+                <td>
+                    <center>
+                    <img src="ssm.jpg" width="340">
+                    <div class="menuofi">
+                        <a id="servisem">SERVIÇOS SEM MARCAÇÃO</a>
+                        <a id="marcon">MARCAÇÕES ON-LINE</a>
+                    </center>
+                </div></td>
+                </tr>
+            </table>
+        </div>
+<!-- ---------------------------------------------- Fim da página SSM ------------------------------------------------- -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------- Página Marcações Online ---------------------------------------------- -->
+        <div class="mon">
+            <table class="tabmon" style="width:100%" border="0">
+            <tr>
+            <td><div class="texto">
+            
+                <font color="blue"><h1>Marcações ON-LINE</h1></font> <br> <br> 
+
+                <div class="form2">
+                    <form>
+                      <label for="nome">Nome</label>
+                      <input type="text" id="nome" name="cxnome" placeholder="Insira o seu nome e apelido..."> <br>
+                  
+                      <label for="morada">Morada</label>
+                      <input type="text" id="morada" name="cxmorada" placeholder="Insira a sua morada..."> <br>
+      
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="cxemail" placeholder="Insira o seu email..."> <br>
+      
+                      <label for="tel">Contacto Telefónico</label>
+                      <input type="text" id="tel" name="cxtel" placeholder="Insira o seu número de telemóvel..."> <br>
+
+                      <label for="modelo">Modelo/Versão</label>
+                      <input type="text" id="modelo" name="cxmodelo" placeholder="Insira o modelo/versão do seu veículo..."> <br>
+
+                      <label for="matricula">Matrícula</label>
+                      <input type="text" id="matricula" name="cxmatricula" placeholder="Insira a matricula do veículo..."> <br>
+
+                      <label for="ano">Ano da Viatura</label>
+                      <input type="text" id="ano" name="cxano" placeholder="Insira o ano da viatura..."> <br>
+
+                      <label for="kms">Kms da Viatura</label>
+                      <input type="text" id="kms" name="cxkms" placeholder="Insira os kms da viatura..."> <br>
+
+                      <label for="servp">Serviços Pretendidos</label>
+                      <input type="text" id="servp" name="cxservp" placeholder="Insira os serviços pretendidos..."> <br>
+
+                      <label for="serva">Serviços Adicionais</label> <br>
+                      <input type="radio" id="serva" name="ad"> Alinhamento de direção<br>
+                      <input type="radio" id="serva" name="tcr"> Trocar e calibrar rodas<br>
+                      <input type="radio" id="serva" name="ffvl"> Focagem de faróis e verificação de luzes<br>
+                      <input type="radio" id="serva" name="eselv"> Examinar/ substituir escovas limpa vidros<br>
+                      <input type="radio" id="serva" name="pc"> Polimento de carroçaria<br>
+                      <input type="radio" id="serva" name="mo"> Mudança de óleo<br>
+                      <input type="radio" id="serva" name="la"> Lavagem e aspiração<br>
+                      <input type="radio" id="serva" name="sptf"> Substituir Pastilhas de travão à frente<br>
+                      <input type="radio" id="serva" name="sptt"> Substituir Pastilhas de travão traseiras<br>
+                      <input type="radio" id="serva" name="te"> Teste de estrada<br>
+                      <input type="radio" id="serva" name="slsi"> Serviço de limpeza do sistema de injecção<br>
+                      <input type="radio" id="serva" name="mlt"> Mudança do líquido dos travões (recomendado a cada 2 anos)<br><br>  
+
+                      <label for="oservp">Outros Serviços Pretendidos</label>
+                      <input type="text" id="oservp" name="cxoservp" placeholder="Insira outros serviços pretendidos..."> <br>
+
+                      <label for="datepicker">Data pretendida para entrega da sua viatura nas nossas instalações</label>
+                      <input type="text" id="datepicker">
+
+                      <input id="sub1" type="Submit" value="Submit">
+                    </form>
+                  </div>
+            </div></td>
+            <td>
+            <center>
+            <img src="oficina.jpg" width="340">
+            <div class="menuofi">
+                <a id="servisem">SERVIÇOS SEM MARCAÇÃO</a>
+                <a id="marcon">MARCAÇÕES ON-LINE</a>
+            </center> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div></td>
+            </tr>
+            </table>
+        </div>
+<!-- ------------------------------------------------ Fim da página marcações Online --------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------- Página Sobre Nós -------------------------------------- -->
+        <div class="sobrenos">
+            <div id="sn">
+                <font color="blue"><h1>Sobre Nós</h1></font> 
+                Somos uma empresa do Grupo StandVirtual e foi fundada em 1981 na cidade de Portimão, <br> 
+                com o objectivo de comercializar e assistir a Marca Ford entre outros e os tractores New Holland na Região do barlavento algarvio.
+            </div>
+            <div id="parceiros">
+                <font color="blue"><h1>Parceiros</h1></font> 
+                Actualmente, representa as marcas Ford, VW e Skoda e possui oficinas Autorizadas <br> 
+                para as marcas Ford, Mazda, Land Rover, VW, Skoda e Audi.
+            </div>
+            <div id="instal">
+                <font color="blue"><h1>Instalações</h1></font> 
+                Possui instalações amplas e modernas, dotadas de fáceis acessos e dos mais recentes equipamentos <br> 
+                de assistência e diagnóstico, bem como técnicos especializados em todas as áreas.
+            </div> <br> <br>
+        </div>
+    </body>
+</html>
